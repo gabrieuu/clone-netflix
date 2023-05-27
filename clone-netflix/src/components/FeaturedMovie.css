@@ -1,0 +1,14 @@
+.featured{
+    height: 100vh;
+    position: relative;
+}
+.feature-shadow-vertical{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top,#111,20%, transparent);*/
+}
+.featured-shadow-horizon{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right,#e66465,20%, transparent);
+}
