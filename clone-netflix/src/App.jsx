@@ -24,7 +24,7 @@ export default () => {
 
       let chooseInfo = await Tmdb.getMovieInfo(chosen.id,'tv');
      // console.log(chosen);
-      console.log(chooseInfo)
+      
       setFeatureData(chooseInfo)
     }
     loadAll();

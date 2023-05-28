@@ -1,14 +1,67 @@
 .featured{
     height: 100vh;
-    position: relative;
+    
 }
 .feature-shadow-vertical{
-    width: inherit;
-    height: inherit;
-    background: linear-gradient(to top,#111,20%, transparent);*/
+    background: linear-gradient(to top, #111 10%, transparent);
+    position: absolute;
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    bottom: -1px;
+    height: 14.7vw;
+    width: 100%;
 }
 .featured-shadow-horizon{
     width: inherit;
+    position: relative;
     height: inherit;
-    background: linear-gradient(to right,#e66465,20%, transparent);
+    background: linear-gradient(to right,#111 30%,transparent 70%);
+}
+.featured-box{
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 30%;
+}
+.featured-name{
+    font-weight: bold;
+    font-size: 5rem;
+}
+.featured-info{
+    display: flex;
+}
+.featured-points span{
+    color: green
+}
+.margin-right{
+    margin-right: 1em;
+}
+.featured-description{
+    margin: 1em 0 .3em 0;
+    width: 600px;
+    font-size: 1.1rem;
+    text-align: justify;
+   
+}
+.featured-genres{
+    color:#e5e5e5;
+    font-weight: 300;
+    font-size: 15px;
+}
+.featured-buttons{
+    margin-top: 3em;
+}
+.featured-buttons a{
+    text-decoration: none;
+    color: #111;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: .9em 1.5em;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 1em;
 }
