@@ -3,6 +3,7 @@ import Tmdb from "./Tmdb";
 import './App.css'
 import RowFilms from "./components/RowFilms";
 import FeaturedMovie from "./components/FeaturedMovie";
+import Navbar from "./components/Navbar";
 export default () => {
 
   const [movieList, setMovieList] = useState([]);
@@ -34,10 +35,13 @@ export default () => {
     <div className="page">
       {/*Header*/}
       
+      <div className="container">
+        <Navbar />
       {/*Destaque*/}
       {featureData &&
         <FeaturedMovie item = {featureData}/>
       }
+      </div>
       {/*Listas*/}
       <section className="lists">
         {movieList.map((item,key) => (

@@ -15,7 +15,7 @@
     width: inherit;
     position: relative;
     height: inherit;
-    background: linear-gradient(to right,#111 30%,transparent 70%);
+    background: linear-gradient(to right,#111 10%,transparent 90%);
 }
 .featured-box{
     margin-left: 5em;
