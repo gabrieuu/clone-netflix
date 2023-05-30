@@ -16,7 +16,11 @@ nav{
 .logo img{
     width: 100%;
 }
+.navegacao{
+    width: 100%;
+}
 .lista{
+    width: inherit;
     list-style: none;
     display: flex;
 }
@@ -29,11 +33,11 @@ a:hover li{
     color: #fff;
 }
 .config{
-    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    background-color: aqua;
 }
 .avatar{
     width: 40px;

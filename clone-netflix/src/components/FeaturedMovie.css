@@ -35,33 +35,49 @@
 .featured-info{
     display: flex;
 }
-.featured-points span{
+.featured-points{
     color: green
 }
 .margin-right{
     margin-right: 1em;
 }
 .featured-description{
-    margin: 1em 0 .3em 0;
+    color:#e5e5e5;
+    margin: 1em 0 1.5em 0;
     width: 600px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-align: justify;
    
 }
 .featured-genres{
     color:#e5e5e5;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 20px;
 }
 .featured-buttons{
-    margin-top: 3em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
 }
 .featured-buttons a{
     text-decoration: none;
-    color: #111;
-    background-color: rgba(255, 255, 255, 0.7);
     padding: .9em 1.5em;
     border-radius: 5px;
     font-weight: bold;
     margin-right: 1em;
+    transition: all 0.2s ease-in;
+}
+.watch{
+    background-color: #fff;
+    color: #111;
+    opacity: 1;
+}
+
+.myList{
+    color: #fff;
+    background-color: #333;
+    opacity: 1;
+}
+.watch:hover, .myList:hover{
+    opacity: 0.7;
 }

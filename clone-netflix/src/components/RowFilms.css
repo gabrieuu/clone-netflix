@@ -7,8 +7,13 @@
     margin-left: 30px;
 }
 .movieRow-listarea {
+    position: relative;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    width: 100;
 }
+
 .movieRow-list{
     display: inline-flex;
 }
@@ -25,4 +30,33 @@
 }
 .movieRow-item img:hover{
     transform: scale(1);
+}
+.seta{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    height: 60%;
+    width: 40px;
+    transform: scale(0.9);
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: .2s all ease-in-out;
+
+}
+.seta:hover{
+    background-color: rgba(36, 36, 36, 0.5);
+}
+.right{
+    right: 0;
+}
+.movieRow:hover .left,
+.movieRow:hover .right{
+    opacity: 1;
 }
