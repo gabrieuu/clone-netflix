@@ -1,6 +1,7 @@
 nav{
     width: 100%;
-    padding: 0 5em;
+    padding-left: 5em;
+    padding-right: 5em;
     display: flex;
     align-items: center;
     height: 70px;
@@ -14,10 +15,11 @@ nav{
     width: 100px;
 }
 .logo img{
-    width: 100%;
+    width: 100px;
 }
 .navegacao{
-    width: 100%;
+    width: 90%;
+    display: inline;
 }
 .lista{
     width: inherit;
@@ -37,7 +39,6 @@ a:hover li{
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    background-color: aqua;
 }
 .avatar{
     width: 40px;
@@ -45,4 +46,32 @@ a:hover li{
 .avatar img{
     width: 100%;
     cursor: pointer;
+}
+.menu-hamburguer{
+    display: none;
+}
+
+@media (max-width: 950px){
+    .lista{
+        font-size: 15px;
+    }
+    .navegacao{
+        width: 90%;
+        background-color: black;
+    }
+}
+@media (max-width: 915px){
+    /*Adicionar menu hamburguer*/
+    .lista{
+        display: none;
+    }
+    .config{
+        display: none;
+    }
+    .navegacao{
+        justify-content: end;
+    }
+    .menu-hamburguer{
+        display: block;
+    }
 }

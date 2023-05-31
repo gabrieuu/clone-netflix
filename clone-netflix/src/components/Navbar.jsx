@@ -2,6 +2,7 @@ import React from "react";
 import './NavBar.css'
 import logo from '../images/netflix_logo.png'
 import avatar from '../images/avatar.png'
+import MenuIcon from '@mui/icons-material/Menu';
 export default () => {
     return (
         <nav>
@@ -17,12 +18,16 @@ export default () => {
                     <a href="#"><li>Minha lista</li></a>
                     <a href="#"><li>Navegar por idiomas</li></a>
                 </ul>
+                <div className="menu-hamburguer">
+               <MenuIcon style={{fontSize:40, color:'#e5e5e5'}}/> 
+                </div>
             </div>
-            <div class="config">
-            <div className="avatar">
-                <img src={avatar} alt="" />
+            <div className="config">
+                <div className="avatar">
+                    <img src={avatar} alt="" />
+                </div>
             </div>
-            </div>
+            
         </nav>
     )
 }
