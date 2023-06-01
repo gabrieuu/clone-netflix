@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from 'react';
 import './FeaturedMovie.css'
 
 
@@ -10,13 +10,14 @@ export default ({item}) => {
     item.genres.map(genero => {
         genres.push(genero.name)
     })
-
+    
     return (
         <section className="featured" style={{
             backgroundImage: `url(https://image.tmdb.org/t/p/original${item.backdrop_path})`,
             backgroundSize: 'cover',
             backgroundPosition: 'left'
         }}>
+        
             <div className="featured-shadow-horizon">
                 <div className="feature-shadow-vertical"></div>
               
@@ -37,5 +38,6 @@ export default ({item}) => {
                 </div>
             </div>
         </section>
+        
     )
 }

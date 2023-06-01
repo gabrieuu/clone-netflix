@@ -1,6 +1,8 @@
 .featured{
     height: 100vh;
     
+}.featuredmobile{
+    display: none;
 }
 .feature-shadow-vertical{
     background: linear-gradient(to top, #111 10%, transparent);
@@ -81,5 +83,3 @@
 .watch:hover, .myList:hover{
     opacity: 0.7;
 }
-
-@media()
