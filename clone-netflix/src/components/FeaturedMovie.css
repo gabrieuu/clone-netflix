@@ -1,6 +1,6 @@
 .featured{
-    height: 100vh;
-    
+    height: 80vh;
+    transition: .3s all;
 }.featuredmobile{
     display: none;
 }
@@ -20,12 +20,12 @@
     background: linear-gradient(to right,#111 10%,transparent 90%);
 }
 .featured-box{
-    margin-left: 5em;
+    margin-left: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: first baseline;
-    width: 50%;
+    width: 90%;
     height: 50%;
     position: absolute;
     bottom: 30%;
@@ -82,4 +82,65 @@
 }
 .watch:hover, .myList:hover{
     opacity: 0.7;
+}
+@media (max-width: 950px){
+    .featured{
+        height: 60vh;
+    }
+    .featured-name{
+        font-size: 3rem;
+        margin-bottom: 5px;
+    }
+    .featured-info{
+        font-size: .9rem;
+    }
+    .featured-description{
+        transition: all .3s ease-in-out;     
+        margin: 1em 0 1.5em 0;
+        font-size: .8rem;
+        text-align: justify;
+        width: 100%;
+    }
+    .featured-genres{
+        margin-top: 2px;
+        font-size: .9rem;
+    }
+    .featured-buttons{
+        margin-bottom: .8em;
+        display: flex;
+        flex-direction: row;
+    }
+    .featured-buttons a{
+        text-decoration: none;
+        padding: .5em 1em;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: .9rem;
+        margin-right: 1em;
+        transition: all 0.2s ease-in;
+    }
+}
+@media (max-width: 607px){
+    .featured{
+        height: 50vh;
+    }
+}
+@media (max-width: 450px){
+    .featured{
+        height: 40vh;
+    }
+    .featured-name{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    .featured-info{
+        font-size: .5rem;
+    }
+    .featured-description{
+        width: 70%;
+        font-size: .5rem;
+    }
+    .featured-genres{
+        font-size: .4rem;
+    }
 }

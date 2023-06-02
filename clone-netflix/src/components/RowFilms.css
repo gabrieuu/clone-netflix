@@ -58,3 +58,21 @@
 .movieRow:hover .right{
     opacity: 1;
 }
+@media (max-width: 950px){
+    .movieRow h2{
+        font-size: 1rem;
+    }
+    .movieRow-item{
+        display: inline-block;
+        width: 100px;
+    }
+}
+@media (max-width: 607px){
+    .movieRow h2{
+        font-size: .9rem;
+    }
+    .movieRow-listarea {
+        overflow-x: hidden;
+        padding: 0 5%;
+    }
+}

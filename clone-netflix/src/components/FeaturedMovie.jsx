@@ -10,7 +10,7 @@ export default ({item}) => {
     item.genres.map(genero => {
         genres.push(genero.name)
     })
-    
+    useEffect(() => {console.log(window.innerWidth+"|")},[window.innerWidth])
     return (
         <section className="featured" style={{
             backgroundImage: `url(https://image.tmdb.org/t/p/original${item.backdrop_path})`,
